@@ -1,0 +1,162 @@
+body {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+}
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(18, 18, 18);
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+#header > div {
+  background-color: rgb(18, 18, 18);
+  width: 40%;
+  margin-left: 50px;
+  display: flex;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+#header > div > button {
+  height: 44%;
+  margin-left: 20px;
+  transition-duration: 500ms;
+}
+#header img {
+  height: 100%;
+  width: 20%;
+}
+#home_button {
+  cursor: pointer;
+}
+#user_1 {
+  color: white;
+  height: 100px;
+  margin-top: 20pxpx;
+}
+
+#body {
+  width: 80%;
+  background-color: black;
+  display: grid;
+  grid-gap: 20px;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  margin-top: 50px;
+}
+#body > div {
+  padding: 10px;
+  color: white;
+  background-color: black;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#body > div:hover {
+  cursor: pointer;
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 5px 30px;
+}
+
+#body > div > div:nth-child(2) {
+  border: 1px solid black;
+  height: 70%;
+}
+#body > div > div:nth-child(2) img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#header > div > button:hover {
+  width: 60px;
+  cursor: pointer;
+  padding: 5px;
+  font-weight: bolder;
+}
+#movies {
+  overflow: scroll;
+  height: 180px;
+  position: absolute;
+  width: 170px;
+  display: none;
+  background-color: rgb(66, 66, 66);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#movies > p {
+  color: white;
+}
+#movies > p:hover {
+  cursor: pointer;
+  background-color: azure;
+  color: black;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 376px) {
+  #body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 44%);
+  }
+  #header {
+    width: 100%;
+  }
+  #header > img {
+    width: 30%;
+  }
+  #header > div {
+    margin-left: 10px;
+  }
+  #header > div > button {
+    margin-left: 0px;
+  }
+  .res_names p {
+    margin: 3px 1px;
+  }
+  .res_names {
+    font-size: smaller;
+  }
+  .deatil_box img {
+    width: 100%;
+  }
+  .deatil_box + div {
+    font-size: x-small;
+    font-weight: 800;
+  }
+}
+@media only screen and (min-width: 377px) and (max-width: 768px) {
+  #body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 44%);
+  }
+  #header {
+    width: 100%;
+  }
+  #header > img {
+    width: 30%;
+  }
+  #header > div {
+    margin-left: 10px;
+  }
+  #header > div > button {
+    margin-left: 0px;
+  }
+  .res_names p {
+    font-size: 5px;
+    font-weight: 200;
+    font-size-adjust: inherit;
+    margin: 5px 1px;
+  }
+  .res_names {
+    line-height: 18px;
+  }
+  .deatil_box + div {
+    font-size: x-small;
+    font-weight: 800;
+  }
+  .deatil_box img {
+    width: 100%;
+  }
+}
