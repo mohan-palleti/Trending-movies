@@ -1,1 +1,1 @@
-this is a mini-app which shows trending movies and shows movies you search for .
+this is a mini-app which shows trending movies and  movies you search for .
