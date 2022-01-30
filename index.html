@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMDB movies</title>
+    <link rel="stylesheet" href="ombd.css" />
+    <script
+      src="https://kit.fontawesome.com/683b4b40e3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg"
+        alt="logo"
+        id="home_button"
+      />
+      <div>
+        <div>
+          <input
+            type="search"
+            id="key_word"
+            oninput="debounce(get_movie2)"
+            placeholder="search by name"
+          />
+          <div id="movies"></div>
+        </div>
+
+        <button onclick="get_movie()"><i class="fas fa-search"></i></button>
+      </div>
+
+      <h1 id="user_1"></h1>
+    </div>
+    <div>
+      <h1 style="color: aliceblue" id="trend_head">Trending Movies</h1>
+    </div>
+    <div id="body"></div>
+  </body>
+  <script src="./script.js"></script>
+</html>
