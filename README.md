@@ -1,4 +1,3 @@
-
 <h3 align="center">Trending Movies Mini-App</h3>
 
   <p align="center">
@@ -8,8 +7,7 @@
 <br/>
 <br/>
 
-
-  <img src="" alt="Logo" width="1000" >
+  <img src="./screenshot.png" alt="Logo" width="1000" >
 
 ## Built With
 
